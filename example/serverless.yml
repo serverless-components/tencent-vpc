@@ -1,0 +1,8 @@
+MyVpc:
+  # component: '@serverless/tencent-vpc'
+  component: ../
+  inputs:
+    region: ap-guangzhou
+    zone: ap-guangzhou-2
+    vpcName: serverless
+    subnetName: serverless
