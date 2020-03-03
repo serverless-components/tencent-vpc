@@ -1,6 +1,5 @@
 MyVpc:
-  # component: '@serverless/tencent-vpc'
-  component: ../
+  component: '@serverless/tencent-vpc'
   inputs:
     region: ap-guangzhou
     zone: ap-guangzhou-2
