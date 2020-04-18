@@ -1,0 +1,17 @@
+{
+  "name": "@serverless/vpc",
+  "version": "0.0.0",
+  "main": "./serverless.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tencent Cloud, Inc.",
+  "license": "Apache",
+  "dependencies": {
+    "tencent-component-toolkit": "^1.2.0",
+    "type": "^2.0.0"
+  }
+}
