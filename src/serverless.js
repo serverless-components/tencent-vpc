@@ -25,7 +25,7 @@ class ServerlessComponent extends Component {
     const credentials = this.getCredentials()
 
     // 对Inputs内容进行标准化
-    const vpcInputs = await prepareInputs(inputs)
+    const vpcInputs = await prepareInputs(this, inputs)
     const baas = new Vpc(credentials, vpcInputs.region)
     // 部署函数 + API网关
     const outputs = await baas.deploy(vpcInputs)

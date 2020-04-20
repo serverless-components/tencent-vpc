@@ -2,7 +2,9 @@ const ensureString = require('type/string/ensure')
 const ensureArray = require('type/array/ensure')
 const CONFIGS = require('./config')
 
-const prepareInputs = (inputs) => {
+const prepareInputs = (instance, inputs) => {
+  inputs.vpcId = instance.state.vpcId
+  inputs.subnetId = instance.state.subnetId
   inputs.region = ensureString(inputs.region, { default: CONFIGS.region })
   inputs.zone = ensureString(inputs.zone, { default: CONFIGS.zone })
   inputs.vpcName = ensureString(inputs.vpcName, {

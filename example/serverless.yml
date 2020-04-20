@@ -2,7 +2,7 @@ org: orgDemo # (optional) serverless dashboard org. default is the first org you
 app: appDemo # (optional) serverless dashboard app. default is the same as the name property.
 stage: dev # (optional) serverless dashboard stage. default is dev.
 
-component: vpc@0.0.0-dev # (required) name of the component. In that case, it's vpc.
+component: vpc # (required) name of the component. In that case, it's vpc.
 name: vpcDemo # (required) name of your vpc component instance.
 
 inputs:

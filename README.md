@@ -1,6 +1,6 @@
 # 腾讯云 Vpc 组件
 
-简体中文 | [English](https://github.com/serverless-components/tencent-vpc/blob/master/README.en.md)
+简体中文 | [English](https://github.com/serverless-components/tencent-vpc/blob/v2/README.en.md)
 
 ## 简介
 
@@ -32,47 +32,28 @@ $ touch serverless.yml
 
 ```yml
 # serverless.yml
-MyVpc:
-  component: '@serverless/tencent-vpc'
-  inputs:
-    region: ap-guangzhou
-    zone: ap-guangzhou-2
-    vpcName: serverless
-    subnetName: serverless
+org: orgDemo # (optional) serverless dashboard org. default is the first org you created during signup.
+app: appDemo # (optional) serverless dashboard app. default is the same as the name property.
+stage: dev # (optional) serverless dashboard stage. default is dev.
+
+component: vpc # (required) name of the component. In that case, it's vpc.
+name: vpcDemo # (required) name of your vpc component instance.
+
+inputs:
+  region: ap-guangzhou
+  zone: ap-guangzhou-2
+  vpcName: serverless
+  subnetName: serverless
 ```
 
-- [更多配置](https://github.com/serverless-components/tencent-vpc/tree/master/docs/configure.md)
+- [更多配置](https://github.com/serverless-components/tencent-vpc/tree/v2/docs/configure.md)
 
 ### 3. 部署
 
 如您的账号未 [登录](https://cloud.tencent.com/login) 或 [注册](https://cloud.tencent.com/register) 腾讯云，您可以直接通过 `微信` 扫描命令行中的二维码进行授权登陆和注册。
 
-通过 `sls` 命令进行部署，并可以添加 `--debug` 参数查看部署过程中的信息
-
 ```bash
-$ sls --debug
-
-  DEBUG ─ Resolving the template's static variables.
-  DEBUG ─ Collecting components from the template.
-  DEBUG ─ Downloading any NPM components found in the template.
-  DEBUG ─ Analyzing the template's components dependencies.
-  DEBUG ─ Creating the template's components graph.
-  DEBUG ─ Syncing template state.
-  DEBUG ─ Executing the template's components graph.
-  DEBUG ─ Creating vpc serverless...
-  DEBUG ─ Create vpc serverless success.
-  DEBUG ─ Creating subnet serverless...
-  DEBUG ─ Create subnet serverless success.
-
-  MyVpc:
-    region:     ap-guangzhou
-    zone:       ap-guangzhou-2
-    vpcName:    serverless
-    subnetName: serverless
-    subnetId:   subnet-kwtsloz4
-    vpcId:      vpc-hqydtuy1
-
-  5s › MyVpc › done
+$ sls deploy
 ```
 
 > 注意: `sls` 是 `serverless` 命令的简写。
@@ -82,15 +63,7 @@ $ sls --debug
 通过以下命令移除部署的 Vpc
 
 ```bash
-$ sls remove --debug
-
-  DEBUG ─ Flushing template state and removing all components.
-  DEBUG ─ Start removing subnet subnet-kwtsloz4
-  DEBUG ─ Removed subnet subnet-kwtsloz4
-  DEBUG ─ Start removing vpc vpc-hqydtuy1
-  DEBUG ─ Removed vpc vpc-hqydtuy1
-
-  7s › MyVpc › done
+$ sls remove
 ```
 
 ### 5. 账号配置（可选）

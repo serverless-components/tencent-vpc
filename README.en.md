@@ -1,6 +1,6 @@
 # Tencent Cloud Vpc Component
 
-[简体中文](https://github.com/serverless-components/tencent-vpc/blob/master/README.md) | English
+[简体中文](https://github.com/serverless-components/tencent-vpc/blob/v2/README.md) | English
 
 ## Introduction
 
@@ -45,43 +45,26 @@ TENCENT_SECRET_KEY=XXX
 
 ```yml
 # serverless.yml
-MyVpc:
-  component: '@serverless/tencent-vpc'
-  inputs:
-    region: ap-guangzhou
-    zone: ap-guangzhou-2
-    vpcName: serverless
-    subnetName: serverless
+org: orgDemo # (optional) serverless dashboard org. default is the first org you created during signup.
+app: appDemo # (optional) serverless dashboard app. default is the same as the name property.
+stage: dev # (optional) serverless dashboard stage. default is dev.
+
+component: vpc # (required) name of the component. In that case, it's vpc.
+name: vpcDemo # (required) name of your vpc component instance.
+
+inputs:
+  region: ap-guangzhou
+  zone: ap-guangzhou-2
+  vpcName: serverless
+  subnetName: serverless
 ```
 
-- [More Options](https://github.com/serverless-components/tencent-vpc/blob/master/docs/configure.md)
+- [More Options](https://github.com/serverless-components/tencent-vpc/blob/v2/docs/configure.md)
 
 ### 4. Deploy
 
 ```bash
-$ sls --debug
-
-  DEBUG ─ Resolving the template's static variables.
-  DEBUG ─ Collecting components from the template.
-  DEBUG ─ Downloading any NPM components found in the template.
-  DEBUG ─ Analyzing the template's components dependencies.
-  DEBUG ─ Creating the template's components graph.
-  DEBUG ─ Syncing template state.
-  DEBUG ─ Executing the template's components graph.
-  DEBUG ─ Creating vpc serverless...
-  DEBUG ─ Create vpc serverless success.
-  DEBUG ─ Creating subnet serverless...
-  DEBUG ─ Create subnet serverless success.
-
-  MyVpc:
-    region:     ap-guangzhou
-    zone:       ap-guangzhou-2
-    vpcName:    serverless
-    subnetName: serverless
-    subnetId:   subnet-kwtsloz4
-    vpcId:      vpc-hqydtuy1
-
-  5s › MyVpc › done
+$ sls deploy
 ```
 
 > Notice: `sls` is short for `serverless` command.
@@ -91,15 +74,7 @@ $ sls --debug
 ### 5. Remove
 
 ```bash
-$ sls remove --debug
-
-  DEBUG ─ Flushing template state and removing all components.
-  DEBUG ─ Start removing subnet subnet-kwtsloz4
-  DEBUG ─ Removed subnet subnet-kwtsloz4
-  DEBUG ─ Start removing vpc vpc-hqydtuy1
-  DEBUG ─ Removed vpc vpc-hqydtuy1
-
-  7s › MyVpc › done
+$ sls remove
 ```
 
 ### More Components
