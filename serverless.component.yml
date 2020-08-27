@@ -1,10 +1,10 @@
 name: vpc
-version: 0.0.2
+version: 0.0.3
 author: Tencent Cloud, Inc.
 org: Tencent Cloud, Inc.
-description: Create Vpc on Tencent Cloud.
+description: Create VPC on Tencent Cloud.
 keywords: tencent, serverless, vpc
-repo: https://github.com/serverless-components/tencent-vpc/tree/v2
-readme: https://github.com/serverless-components/tencent-vpc/tree/v2
+repo: https://github.com/serverless-components/tencent-vpc/
+readme: https://github.com/serverless-components/tencent-vpc/tree/master/README.md
 license: MIT
 main: ./src

@@ -22,7 +22,7 @@ class ServerlessComponent extends Component {
   }
 
   async deploy(inputs) {
-    console.log(`Deploying Vpc...`)
+    console.log(`Deploying vpc`)
 
     const credentials = this.getCredentials()
 
