@@ -1,6 +1,6 @@
 # Tencent Cloud Vpc Component
 
-[简体中文](https://github.com/serverless-components/tencent-vpc/blob/v2/README.md) | English
+[简体中文](./README.md) | English
 
 ## Introduction
 
@@ -59,7 +59,7 @@ inputs:
   subnetName: serverless
 ```
 
-- [More Options](https://github.com/serverless-components/tencent-vpc/blob/v2/docs/configure.md)
+- [More Options](/docs/configure.md)
 
 ### 4. Deploy
 

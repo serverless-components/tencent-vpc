@@ -1,6 +1,6 @@
 # 腾讯云 Vpc 组件
 
-简体中文 | [English](https://github.com/serverless-components/tencent-vpc/blob/v2/README.en.md)
+简体中文 | [English](./README.en.md)
 
 ## 简介
 
@@ -46,7 +46,7 @@ inputs:
   subnetName: serverless
 ```
 
-- [更多配置](https://github.com/serverless-components/tencent-vpc/tree/v2/docs/configure.md)
+- [更多配置](/docs/configure.md)
 
 ### 3. 部署
 
