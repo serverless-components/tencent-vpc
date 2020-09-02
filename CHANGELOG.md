@@ -1,3 +1,10 @@
+## [0.0.4](https://github.com/serverless-components/tencent-vpc/compare/v0.0.3...v0.0.4) (2020-09-02)
+
+
+### Bug Fixes
+
+* update tencnet-component-toolkit for api mark ([df3943f](https://github.com/serverless-components/tencent-vpc/commit/df3943f5d6ae205a55b3bdf024452ea0db9d1e57))
+
 ## [0.0.3](https://github.com/serverless-components/tencent-vpc/compare/v0.0.2...v0.0.3) (2020-08-27)
 
 
