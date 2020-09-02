@@ -9,7 +9,7 @@
   "author": "Tencent Cloud, Inc.",
   "license": "Apache",
   "dependencies": {
-    "tencent-component-toolkit": "^1.15.7",
+    "tencent-component-toolkit": "^1.16.3",
     "type": "^2.0.0"
   }
 }

@@ -42,7 +42,7 @@ class ServerlessComponent extends Component {
   }
 
   async remove() {
-    console.log(`Removing Vpc...`)
+    console.log(`Removing Vpc`)
 
     const { state } = this
 
