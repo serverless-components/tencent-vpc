@@ -1,3 +1,10 @@
+## [0.0.5](https://github.com/serverless-components/tencent-vpc/compare/v0.0.4...v0.0.5) (2020-09-07)
+
+
+### Bug Fixes
+
+* update deps ([4b022eb](https://github.com/serverless-components/tencent-vpc/commit/4b022ebce0ed45e197a301b90fbabbdc5ea099f7))
+
 ## [0.0.4](https://github.com/serverless-components/tencent-vpc/compare/v0.0.3...v0.0.4) (2020-09-02)
 
 
