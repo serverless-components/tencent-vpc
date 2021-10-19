@@ -2,7 +2,7 @@ name: vpc
 version: 0.0.5
 author: 'Tencent Cloud, Inc.'
 org: 'Tencent Cloud, Inc.'
-description: Create VPC on Tencent Cloud.
+description: VPC 组件， 允许用户创建部署一个 VPC 虚拟网络。为您的应用设置完全逻辑隔离的私有网络环境。
 keywords: 'tencent, serverless, vpc'
 repo: 'https://github.com/serverless-components/tencent-vpc/'
 readme: 'https://github.com/serverless-components/tencent-vpc/tree/master/README.md'
